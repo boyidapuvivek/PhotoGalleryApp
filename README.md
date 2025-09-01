@@ -13,16 +13,26 @@ A beautiful React Native gallery application with image viewing, favorites manag
 
 ## Screenshots
 
-<!-- Add your screenshots here -->
 ### Light Theme
-![Home Screen](./screenshots/home-light.png)
-![Favorites Screen](./screenshots/favorites.png)
-![Image Viewer](./screenshots/image-viewer.png)
+
+<table>
+  <tr>
+    <td><img src="./ss/gallery-light.png" alt="Gallery Light" width="200"/></td>
+    <td><img src="./ss/favourite-light.png" alt="Favorites Light" width="200"/></td>
+    <td><img src="./ss/setting-light.png" alt="Settings Light" width="200"/></td>
+  </tr>
+</table>
 
 ### Dark Theme
-![Home Screen](./screenshots/home-dark.png)
-![Favorites Screen](./screenshots/favorites.png)
-![Image Viewer](./screenshots/image-viewer.png)
+
+<table>
+  <tr>
+    <td><img src="./ss/gallery-dark.png" alt="Gallery Dark" width="200"/></td>
+    <td><img src="./ss/favourite-dark.png" alt="Favorites Dark" width="200"/></td>
+    <td><img src="./ss/image-preview.png" alt="Image Viewer" width="200"/></td>
+  </tr>
+</table>
+
 
 ## Prerequisites
 
