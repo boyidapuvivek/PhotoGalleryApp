@@ -35,6 +35,8 @@ export const useFavoritesStore = create<FavoritesStore>((set, get) => ({
 
     try {
       const favorites = await storage.get<GalleryImage[]>(CONSTANTS.STORAGE.FAVORITES_KEY) || [];
+      // console.log("😊",favorites);
+      
       set({ favorites, isLoading: false });
     } catch (error: any) {
       set({

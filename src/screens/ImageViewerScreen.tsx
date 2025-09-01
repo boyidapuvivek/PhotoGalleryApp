@@ -23,10 +23,14 @@ export const ImageViewerScreen: React.FC = () => {
   const navigation = useNavigation<ImageViewerScreenNavigationProp>()
   const pagerRef = useRef<PagerView>(null)
 
-  // Get images from store instead of navigation params
-  const { images } = useGalleryStore()
+  // Get images from store
+  const { images: galleryImages } = useGalleryStore()
 
-  const { currentImage, currentIndex } = route.params
+  const { currentImage, currentIndex, images: passedImages } = route.params
+
+  // Use passed images if available (from Favorites), otherwise use gallery images (from Home)
+  const images = passedImages || galleryImages
+
   const [activeIndex, setActiveIndex] = useState(currentIndex)
   const [controlsVisible, setControlsVisible] = useState(true)
   const [isImmersive, setIsImmersive] = useState(false)

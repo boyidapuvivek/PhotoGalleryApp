@@ -30,7 +30,7 @@ export const FavoritesScreen: React.FC = () => {
   const handleImagePress = (image: GalleryImage, index: number) => {
     navigation.navigate("ImageViewer", {
       images: favorites,
-      initialIndex: index,
+      currentIndex: index,
     })
   }
 
