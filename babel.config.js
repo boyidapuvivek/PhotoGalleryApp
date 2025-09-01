@@ -3,7 +3,7 @@ module.exports = function (api) {
   return {
     presets: ["babel-preset-expo"],
     plugins: [
-      "react-native-worklets/plugin", // Updated plugin name
+      "react-native-worklets/plugin", // keep worklets
       [
         "module-resolver",
         {
@@ -12,6 +12,15 @@ module.exports = function (api) {
           alias: {
             "@": "./src",
           },
+        },
+      ],
+      [
+        "module:react-native-dotenv",
+        {
+          moduleName: "@env",
+          path: ".env",
+          safe: false,
+          allowUndefined: true,
         },
       ],
     ],

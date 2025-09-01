@@ -1,7 +1,8 @@
 import axios, { AxiosResponse, CancelTokenSource } from 'axios';
 import { FotoOwlResponse, PaginationParams, ApiError } from '@/types/api';
+import {API} from "@env"
 
-const BASE_URL = 'https://openapi.fotoowl.ai/open/event/image-list';
+const BASE_URL = API;
 const EVENT_ID = '154770';
 const API_KEY = '4030';
 
